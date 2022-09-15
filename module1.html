@@ -44,9 +44,82 @@
             <article>
               <h2>Module #1: Launching into Cyber-Security</h2>
               <p>Start descriptions here.</p>
-              <h3>Some sub-title</h3>
-              <p>More content.</p>
-              <p>Even more content.</p>
+              <h3>Artefact: Report</h3>
+              <p> Unit 9 required us to write up a detailed report on a
+                web-based Appointment and Scheduling Management Information
+                System (ASMIS) for a medical clinic based in Queens,
+                specifically detailing the potential OOP design, and focusing on
+                potential security risks and possible counter-measures to these
+                risks. </p>
+              <p> <a href="artefacts/ASMIS%20Cyber%20Threat%20and%20Mitigation%20Reportv2_mod1.docx">ASMIS
+                  Cyber Threats and Mitigation Report</a> </p>
+              <h3>Artefact: ASMIS Prototype System</h3>
+              <p> Unit 12 ended off with instructions to implement a prototype
+                of the ASMIS proposed in the ASMIS report, along with at least
+                one security measure addressing one cyber-security risk
+                identified in the report. My implementation is a
+                fully-functional prototype ASMIS system. It provides all of the
+                functionality to demonstrate basic appointment booking and
+                consultation capturing. The main data of interest for hackers /
+                cyber-criminals in such a system are the patient details and
+                patient medical records. It is therefore of utmost importance to
+                ensure that these data are secured as far as possible. All of
+                the code and related resources can be found on my GitHub repo:</p>
+              <p><a href="https://github.com/nmajola81/asmis-project">ASMIS
+                  GitHub Repo</a></p>
+              <p> I decided to generally incorporate and demonstrate the
+                following security features: </p>
+              <ul>
+                <li>A strict password policy (at least 8 characters long,
+                  consisting of at least 1 upper-case, 1 lower-case, 1 special
+                  and 1 numeric character) that would help mitigate the threat
+                  of spoofing via brute force / dictionary attacks.</li>
+                <li>Storing passwords in the form of salted hashes in the
+                  database. This helps prevent information disclosure if the
+                  database were to be breached; coupled with the strict password
+                  policy, passwords with salted encryption provide extra
+                  security, making it difficult for hackers to do a hash look
+                  up.</li>
+                <li>Extensive logging of all key actions in the system along
+                  with exact date and time e.g. user login and logout
+                  activities, to appointment booking, patient detail viewing,
+                  patient consultation notes viewing, updating details etc. This
+                  fosters an environment of responsible use; a malicious user
+                  (especially Admin user) would be far more reluctant to engage
+                  in abusive activities, knowing that every action is recorded
+                  as having been carried out by that user.</li>
+                <li>Admin user permission levels. For this prototype, a basic
+                  access control system was provided whereby Admin users are
+                  either permission level 2 i.e. Super Admin user, who will have
+                  over-sight over other Admins, or a normal Admin user with
+                  permission level 1 who has to obtain authorization from a
+                  Super Admin for key activities that may be susceptible to
+                  abuse. In practice a more extensive access control system
+                  would need to be implemented to systematically control access
+                  to a variety of activities.</li>
+                <li>Multi-factor authentication to foster an environment of
+                  consent and over-sight for key activities. i.e.:
+                  <ul>
+                    <li>When a Physician tries to access a patient's previous
+                      consultation notes, an OTP is sent to the relevant
+                      patient, and the Physician will only be granted access
+                      with this OTP.</li>
+                    <li>When an Admin user tries to view or edit a patient's
+                      details, an OTP is sent to the relevant patient, and the
+                      Admin user will only be granted access with this OTP.</li>
+                    <li>When a normal Admin user (permission level 1) tries to
+                      register a new Physician account or to Cancel an
+                      appointment, an OTP is sent to the super Admin user
+                      (permission level 2), and the normal Admin user will only
+                      be granted access to these actions with this OTP.</li>
+                  </ul>
+                </li>
+                <li>SQL injection protection by using standard SQL querying
+                  libraries and using safe query practices in the form of safe
+                  parameter substitution.</li>
+              </ul>
+              <h3>Reflective Piece:</h3>
+              <p>Put some deeply profound reflections here...</p>
             </article>
           </div>
         </div>
