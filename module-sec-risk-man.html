@@ -7,6 +7,34 @@
     <title>Mbali Majola's ePortfolio - 2. Security and Risk Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/main.css">
+    <style style="" type="text/css">
+      body    { counter-reset: h2counter; }
+body h2 { counter-reset: h3counter; }
+    
+body h3 { counter-reset: h4counter; }
+
+body h3::before {
+    counter-increment: h3counter;
+    content: counter(h3counter) ".\0000a0\0000a0";
+}
+      
+      h3.nocount:before {
+        content: none;
+        counter-increment: none;
+    }
+      
+body h4::before {
+    counter-increment: h4counter;
+    content: counter(h3counter) "." counter(h4counter) "\0000a0\0000a0";
+}
+      h4.nocount:before {
+        content: none;
+        counter-increment: none;
+    }
+      
+      
+
+  </style>
   </head>
   <body class="is-preload homepage">
     <div id="page-wrapper">
@@ -45,7 +73,7 @@
             <article>
               <h2>Module #2: Security and Risk Management</h2>
               <p></p>
-              <h3 id="tocontents">Contents:</h3>
+              <h3 id="tocontents" class="nocount">Contents:</h3>
               <ul>
                 <li><a href="#learnoutcomes">Learning Outcomes</a></li>
                 <li><a href="#skillstobegained">Skills to be gained</a></li>
@@ -53,7 +81,6 @@
                     this go - right on top or right at the bottom?)</a></li>
                 <li><a href="#skillsmatrix">Skills Matrix (Where should this
                     go??)</a></li>
-                
                 <li><a href="#groupcontract">Group Contract</a></li>
                 <li><a href="#collabdiscuss1">Collaborative Discussion 1</a></li>
                 <li><a href="#gdprcasestudy">GDPR Case Study</a></li>
@@ -63,6 +90,10 @@
                 <li><a href="#risksquality">Risks to the Quality of Products </a></li>
                 <li><a href="#collabdisc2">Collaborative Discussion 2</a></li>
                 <li><a href="#drsolutions">DR Solutions Design and Review</a></li>
+                <ul style="list-style-type:'—'; margin-bottom:0;">
+                  <li><a href="#drsolutionsrep">Report</a></li>
+                  <li><a href="#drsolutionsppt">Powerpoint Slides</a></li>
+                </ul>
                 <li><a href="#execsummary">Executive Summary</a></li>
                 <li><a href="#futuresrm">Future of SRM Presentation:</a></li>
                 <ul style="list-style-type:'—'; margin-bottom:0;">
@@ -91,11 +122,9 @@
                 </ul>
                 <li><a href="#groupnotes">SRM_G1_2022_Group_Notes (Where should
                     this go - if at all?)</a></li>
-
               </ul>
               <h3 id="learnoutcomes">Learning Outcomes:</h3>
-              <p> <a href="#tocontents">Back to Table of Contents</a>
-              </p>
+              <p> <a href="#tocontents">Back to Table of Contents</a> </p>
               <ul>
                 <li>Identify and analyse critically security risks, threats and
                   vulnerabilities in information systems, accounting for the
@@ -125,8 +154,6 @@
                 <li>Entrepreneurial</li>
                 <li>Critical Reflection</li>
               </ul>
-              
-                            
               <h3 id="reflectivepiece">Reflective Piece (Where should this go -
                 right on top or right at the bottom?):</h3>
               <p> <a href="#tocontents">Back to Table of Contents</a></p>
@@ -145,15 +172,11 @@
               <p> <img src="artefacts/SRMModule/Reflective_Piece/Reflective_piece_Page5.jpg"
 
                   alt="reflectivepiece5" style="border:1px solid #000000" width="70%"></p>
-              
-              
               <h3 id="skillsmatrix">Skills Matrix (Where should this go??):</h3>
               <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/Skills_Matrix/Skills_Matrix.jpg"
 
                   alt="reflectivepiece1" width="70%"></p>
-              
-              
               <h3 id="groupcontract">Group Contract:</h3>
               <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/SRM%20G1_2022_Group%20Contract/SRM%20G1_2022_Group%20Contract_Page1.jpg"
@@ -181,6 +204,10 @@
               <p> <img src="artefacts/SRMModule/Collaborative%20discussion%201/Collaborative%20discussion%201_Page3.jpg"
 
                   alt="CollabDiscuss3" style="border:1px solid #000000" width="70%">
+              </p>
+              <p> <img src="artefacts/SRMModule/Collaborative%20discussion%201/Collaborative%20discussion%201_Page4.jpg"
+
+                  alt="CollabDiscuss4" style="border:1px solid #000000" width="70%">
               </p>
               <h3 id="gdprcasestudy">GDPR Case Study:</h3>
               <p> <a href="#tocontents">Back to Table of Contents</a></p>
@@ -229,8 +256,34 @@
 
                   alt="GrpMeeting" style="border:1px solid #000000" width="70%"></p>
               <h3 id="drsolutions">DR Solutions Design and Review:</h3>
+              <h4 id="drsolutionsrep">Report:</h4>
               <p> <a href="#tocontents">Back to Table of Contents</a></p>
-              <p> &lt;TODO&gt; </p>
+              <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page1.jpg"
+
+                  alt="ExecSummary1" style="border:1px solid #000000" width="70%"></p>
+              <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page2.jpg"
+
+                  alt="drsolrep2" style="border:1px solid #000000" width="70%"></p>
+              <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page3.jpg"
+
+                  alt="drsolrep3" style="border:1px solid #000000" width="70%"></p>
+              <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page4.jpg"
+
+                  alt="drsolrep4" style="border:1px solid #000000" width="70%"></p>
+              <h4 id="drsolutionsppt">Powerpoint Slides:</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
+              <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page1.jpg"
+
+                  alt="drsolppt1" style="border:1px solid #000000" width="70%"></p>
+              <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page2.jpg"
+
+                  alt="drsolppt2" style="border:1px solid #000000" width="70%"></p>
+              <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page3.jpg"
+
+                  alt="drsolppt3" style="border:1px solid #000000" width="70%"></p>
+              <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page4.jpg"
+
+                  alt="drsolppt4" style="border:1px solid #000000" width="70%"></p>
               <h3 id="execsummary">Executive Summary:</h3>
               <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page1.jpg"
@@ -274,7 +327,8 @@
                   alt="ExecSummary13" style="border:1px solid #000000" width="70%"></p>
               <h3 id="futuresrm">Future of SRM Presentation:</h3>
               <p> <a href="#tocontents">Back to Table of Contents</a></p>
-              <h4 id="futuresrmslides">Future of SRM Powerpoint Slides:</h4> <p> <a href="#tocontents">Back to Table of Contents</a></p>
+              <h4 id="futuresrmslides">Future of SRM Powerpoint Slides:</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page1.jpg"
 
                   alt="PPT1" style="border:1px solid #000000" width="70%"></p>
@@ -318,7 +372,8 @@
 
                   alt="PPT14" style="border:1px solid #000000" width="70%"></p>
               <h4 id="futuresrmtranscript">Future of SRM Transcript (My Parts
-                Only):</h4> <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                Only):</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/Some%20AI%20generated%20text%20for%20PowerPoint/Some%20AI%20generated%20text%20for%20PowerPoint_Page1.jpg"
 
                   alt="PPTtransc1" style="border:1px solid #000000" width="70%"></p>
@@ -344,21 +399,24 @@
 
                   alt="vikcop5" style="border:1px solid #000000" width="70%"></p>
               <h4 id="vikorcopras_shannon">Computation of Shannon Entropy Weight
-                Estimation:</h4> <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                Estimation:</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/shannon1.jpg"
 
                   alt="shannon1" style="border:1px solid #000000" width="70%"></p>
               <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/shannon2.jpg"
 
                   alt="shannon2" style="border:1px solid #000000" width="70%"></p>
-              <h4 id="vikorcopras_vikor">Computation of VIKOR Analysis:</h4> <p> <a href="#tocontents">Back to Table of Contents</a></p>
+              <h4 id="vikorcopras_vikor">Computation of VIKOR Analysis:</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/vikor1.jpg"
 
                   alt="vikor1" style="border:1px solid #000000" width="70%"></p>
               <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/vikor2.jpg"
 
                   alt="vikor2" style="border:1px solid #000000" width="70%"></p>
-              <h4 id="vikorcopras_copras">Computation of COPRAS Analysis:</h4> <p> <a href="#tocontents">Back to Table of Contents</a></p>
+              <h4 id="vikorcopras_copras">Computation of COPRAS Analysis:</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/copras1.jpg"
 
                   alt="copras1" style="border:1px solid #000000" width="70%"></p>
@@ -390,7 +448,8 @@
 
                   alt="mcmcreport2" style="border:1px solid #000000" width="70%"></p>
               <h4 id="mcmcprobs">Computation of Probabilities of Attack
-                Likelihood, Typical Severity and Skills Required:</h4> <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                Likelihood, Typical Severity and Skills Required:</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/MCMC%20XLS/MCMCprobabilities1.jpg"
 
                   alt="mcmcprobs1" style="border:1px solid #000000" width="70%"></p>
@@ -398,7 +457,8 @@
 
                   alt="mcmcprobs2" style="border:1px solid #000000" width="70%"></p>
               <h4 id="mcmcsim">Markov Chain Monte Carlo Simulation Using
-                Computed Probabilities:</h4> <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                Computed Probabilities:</h4>
+              <p> <a href="#tocontents">Back to Table of Contents</a></p>
               <p> <img src="artefacts/SRMModule/MCMC%20XLS/MCMCcyberthreatsimulation.jpg"
 
                   alt="mcmcsim" style="border:1px solid #000000" width="70%"></p>
@@ -480,7 +540,6 @@
                   alt="SRM_G1_2022_Group_Notes15" style="border:1px solid #000000"
 
                   width="70%"></p>
-
             </article>
             <a href="#learnoutcomes"> </a></div>
           <a href="#learnoutcomes"> </a></div>
@@ -528,5 +587,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script> alt="riskstoquality1"&gt;
+    
   </body>
 </html>
