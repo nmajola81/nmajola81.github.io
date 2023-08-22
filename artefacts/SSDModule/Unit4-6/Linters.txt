@@ -1,0 +1,43 @@
+TESTING WITH PYTHON
+
+Question 1
+
+- What happens when the code is run?
+Nothing.
+
+- Can you modify this code for a more favourable outcome?
+Yes.
+
+- What amendments have you made to the code?
+I made a function call to the factorial function: print(factorial(10))
+
+Question 2
+
+All done and errors fixed.
+
+Question 3
+
+- Run flake8 on pylintTest.py. Review the errors returned. In what way does this error message differ from the error message returned by pylint?
+
+The format of the error list is different.
+
+- Run flake8 on metricTest.py. Can you correct each of the errors returned by flake8? What amendments have you made to the code?
+
+All errors in the list have been fixed as directed e.g. indentation etc. MANY amendments including fixing indentation, trailing whitespaces, long lines etc. There was also a - sign that was not a standard character that was causing a syntax error.
+
+Question 4
+
+- Run mccabe on sums.py. What is the result?
+The following list results, which is a list of elements in the code that contribute to cyclomatic complexity
+("4:0: 'test_sum'", 1)
+('If 7', 2)
+
+In this case, the test_sum function is contributing 1 to the cyclomatic complexity, whereas the if statement contributes 2 because the if results in two independent paths through the program.
+
+- Run mccabe on sums2.py. What is the result?
+The following list results, which is a list of elements in the code that contribute to cyclomatic complexity
+("7:0: 'test_sum_tuple'", 1)
+("4:0: 'test_sum'", 1)
+('If 10', 2)
+
+In this case, the test_sum function and if statement still contributes 1 and 2 respectively to the cyclomatic complexity, but an additional function (test_sum_tuple) has been added which also contributes to the cyclomatic complexity.

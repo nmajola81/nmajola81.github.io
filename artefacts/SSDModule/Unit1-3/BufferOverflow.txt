@@ -1,0 +1,32 @@
+BUFFER OVERFLOW WITH C
+
+1. Run the code a second time (from the command window this can be achieved by entering ./bufoverflow on the command line). This time, enter a string of 10 or more characters.
+
+-What happens?
+The code crashes with an output message:
+
+*** stack smashing detected ***: <unknown> terminated
+Aborted (core dumped)
+
+-What does the output message mean?
+
+The "stack smashing detected" message indicates that the program's stack has been corrupted, which happened because the program had only allocated enough memory for 8 characters, but more than 8 were written to it; this meant that the data extended outside the bounds of the allocated memory, which can be a serious security issue (i.e. one program trying to access memory allocated to other programs).
+
+The "Aborted (core dumped)" message means that the program was terminated by the operating system, and a core dump was generated, which is a file that contains a snapshot of the program's memory at the time of the crash, and can be used for debugging purposes to see what went wrong.
+
+
+BUFFER OVERFLOW WITH PYTHON
+
+- Run the code using python overflow.py. What is the result?
+
+The program aborts with a IndexError indicating that the program has tried to set an element in a list that is out of range of the list bounds. This is very different to what happened with C i.e. the Python interpreter caught the issue and didn't even run the code.
+
+
+- Run pylint on your Overflow.py file and evaluate the output. What is the result?
+
+Pylint has detected and listed four issues with code and has given the code a rating of 0.00 out of 10.
+
+- Does this tell you how to fix the error above?
+
+No. The issues Pylint has listed are all to do with code style violations.
+

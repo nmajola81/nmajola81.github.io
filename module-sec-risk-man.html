@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!--
+	Verti by HTML5 UP	html5up.net | @ajlkn	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Mbali Majola's ePortfolio - 2. Security and Risk Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style style="" type="text/css">
+      body    { counter-reset: h2counter; }
+body h2 { counter-reset: h3counter; }
+    
+body h3 { counter-reset: h4counter; }
+
+body h3::before {
+    counter-increment: h3counter;
+    content: counter(h3counter) ".\0000a0\0000a0";
+}
+      
+      h3.nocount:before {
+        content: none;
+        counter-increment: none;
+    }
+      
+body h4::before {
+    counter-increment: h4counter;
+    content: counter(h3counter) "." counter(h4counter) "\0000a0\0000a0";
+}
+      h4.nocount:before {
+        content: none;
+        counter-increment: none;
+    }
+      
+ol li {display:block;} /* hide original list counter */
+ol > li:first-child {counter-reset: item;} /* reset counter */
+ol > li {counter-increment: item; position: relative;} /* increment counter */
+ol > li:before {content:counters(item, ".") ". "; position: absolute; margin-right: 100%; right: 10px;}
+      
+
+  </style>
+  </head>
+  <body class="is-preload homepage">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header-wrapper">
+        <header id="header" class="container">
+          <!-- Logo -->
+          <div id="logo">
+            <h1 style="background-color: #6666cc;"><a href="index.html">ePortfolio</a></h1>
+            <!-- Nav --> </div>
+          <p><strong>Master's in Cyber-Security at University of Essex Online
+              2022</strong></p>
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#main-wrapper">About Me</a></li>
+              <li class="current"> <a href="#">Modules</a>
+                <ul>
+                  <li><a href="module1.html">1. Launching into Cyber-Security</a></li>
+                  <li><a href="module-sec-risk-man.html">2. Security and Risk
+                      Management</a></li>
+                  <li> <a href="module-network-security.html">3. Network
+                      Security</a></li>
+                  <li> <a href="module-ssd.html">4. Secure Software Development</a></li>
+                  <li><a href="#">Future Module</a></li>
+                </ul>
+              </li>
+              <li><a href="#footer-wrapper">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <!-- Main -->
+      <div id="main-wrapper">
+        <div class="container">
+          <div id="content">
+            <!-- Content -->
+            <article>
+              <h2>Module #2: Security and Risk Management</h2>
+              <p></p>
+              <h3 id="tocontents" class="nocount">Contents:</h3>
+              <ol class="toc1">
+                <li><a href="#learningoutcomes">Learning outcomes</a></li>
+                <li><a href="#skillstobegained">Skills to be gained</a></li>
+                <li><a href="#unit1_4">Unit 1 - 4</a></li>
+                <ol style="margin-bottom:0;" class="toc2">
+                  <li><a href="#ReflectivePiece">Reflective Piece</a></li>
+                  <li><a href="#SkillsMatrix">Skills Matrix</a></li>
+                  <li><a href="#GroupContract">Group Contract</a></li>
+                  <li><a href="#Collaborativediscussion1">Collaborative
+                      Discussion1</a></li>
+                </ol>
+                <li><a id="tocontents58" href="#unit5_8">Unit 5 - 8</a></li>
+                <ol style="margin-bottom:0;" class="toc2">
+                  <li><a href="#SecurityFrameworks">Security Frameworks</a></li>
+                  <li><a href="#GDPRCaseStudy">GDPR Case Study</a></li>
+                  <li><a href="#RiskIdentificationReport"> Risk Identification
+                      Report</a></li>
+                </ol>
+                <li><a id="tocontents912" href="#unit9_12">Unit 9 - 12</a></li>
+                <ol style="margin-bottom:0;" class="toc2">
+                  <li><a href="#CollaborativeDiscussion2">Collaborative
+                      Discussion 2</a></li>
+                  <li><a href="#DRsolutionReportPart1">DR solution Part 1 -
+                      Report</a></li>
+                  <li><a href="#DRSolutionPresentationPart2">DR Solution Part 2
+                      - Presentation</a></li>
+                  <li><a href="#Group1ExecutiveSummary">Executive Summary</a></li>
+                  <li><a href="#FuturefSRMPowerPoint">Future of SRM Presentation
+                      Slides</a></li>
+                </ol>
+                <li><a id="tocontentssupport" href="#adhoc">Supporting
+                    Documents:</a></li>
+                <ol style="margin-bottom:0;" class="toc2">
+                  <li><a href="#PeerReview">Peer Review Evaluation</a></li>
+                  <li><a href="#GroupNotes">Group Notes</a></li>
+                  <li><a href="#MeetingMinutes">Meeting Minutes</a></li>
+                  <li><a href="#Collaborativediscussion1PeerResponses">Collaborative
+                      Discussion 1 - Peer Responses:</a></li>
+                  <li><a href="#FirstDraftRiskIdentificationReport">First Draft
+                      Risk Identification Report</a></li>
+                  <li><a href="#SecondDraftRiskIdentificationReport">Second
+                      Draft Risk Identification Report</a></li>
+                  <li><a href="#RiskstotheQualityofProducts">Risks to the
+                      Quality of Products</a></li>
+                  <li><a href="#DraftExecutiveSummary">Draft Executive Summary</a></li>
+                  <li><a href="#ApplicationofVikorandCopras">Application of
+                      VIKOR and COPRAS for Cyber Threat Ranking Report</a></li>
+                  <li><a href="#ComputationofShannonEntropyWeightEstimation">Computation
+                      of Shannon Entropy Weight Estimation</a></li>
+                  <li><a href="#ComputationofVikorAnalysis">Computation of Vikor
+                      Analysis</a></li>
+                  <li><a href="#ComputationofCoprasAnalysis">Computation of
+                      COPRAS Analysis</a></li>
+                  <li><a href="#DescriptionMonteCarloSimulation">Description of
+                      Markov Chain Monte Carlo (MCMC) Simulation of Risk of
+                      Cyber Threats</a></li>
+                  <li><a href="#MonteCarloSimulationProbs">Computation of
+                      Probabilities of Attack Likelihood, Typical Severity and
+                      Skills Required for MCMC Simulation</a></li>
+                  <li><a href="#MonteCarloSimulationResults">Results of MCMC
+                      Simulation of Cyber Threats Using Computed Probabilities</a></li>
+                  <li><a href="#FuturefSRMTranscript">Future of SRM Presentation
+                      Transcript</a></li>
+                </ol>
+                <br>
+                <h3 id="learningoutcomes">Learning Outcomes:</h3>
+                <p> <a href="#tocontents">Back to Table of Contents</a> </p>
+                <ul>
+                  <li>Identify and analyse critically security risks, threats
+                    and vulnerabilities in information systems, accounting for
+                    the current threat landscape.</li>
+                  <li>Gather and synthesise information from multiple sources
+                    (including internet security alerts &amp; warning sites) to
+                    aid in the systematic analysis of risks &amp; security
+                    issues manage and audit risk and security issues.</li>
+                  <li>Critically determine appropriate methodologies, tools and
+                    techniques to mitigate and/or solve security risks and their
+                    business impact.</li>
+                  <li>Articulate the legal, social, ethical, and professional
+                    issues faced by information security and risk professionals.</li>
+                </ul>
+                <h3 id="skillstobegained">Skills to be gained:</h3>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <ul>
+                  <li>Time management</li>
+                  <li>Resilience</li>
+                  <li>Critical thinking and analysis</li>
+                  <li>Problem-solving</li>
+                  <li>Communication and Literacy skills</li>
+                  <li>IT and Digital</li>
+                  <li>Interpersonal</li>
+                  <li>Teamwork/Global Citizen and Leadership</li>
+                  <li>Emotional Intelligence</li>
+                  <li>Entrepreneurial</li>
+                  <li>Critical Reflection</li>
+                </ul>
+                <h3 id="unit1_4">Unit 1 - 4:</h3>
+                <h4 id="ReflectivePiece">Reflective Piece:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Reflective_Piece/Reflective_piece_Page1.jpg"
+
+                    alt="reflectivepiece1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Reflective_Piece/Reflective_piece_Page2.jpg"
+
+                    alt="reflectivepiece2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Reflective_Piece/Reflective_piece_Page3.jpg"
+
+                    alt="reflectivepiece3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Reflective_Piece/Reflective_piece_Page4.jpg"
+
+                    alt="reflectivepiece4" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Reflective_Piece/Reflective_piece_Page5.jpg"
+
+                    alt="reflectivepiece5" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="SkillsMatrix">Skills Matrix:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Skills_Matrix/Skills_Matrix.jpg"
+
+                    alt="skillsmatrix" width="70%"></p>
+                <h4 id="GroupContract">Group Contract:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/SRM%20G1_2022_Group%20Contract/SRM%20G1_2022_Group%20Contract_Page1.jpg"
+
+                    alt="grpcontract1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM%20G1_2022_Group%20Contract/SRM%20G1_2022_Group%20Contract_Page2.jpg"
+
+                    alt="grpcontract2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM%20G1_2022_Group%20Contract/SRM%20G1_2022_Group%20Contract_Page3.jpg"
+
+                    alt="grpcontract3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM%20G1_2022_Group%20Contract/SRM%20G1_2022_Group%20Contract_Page4.jpg"
+
+                    alt="grpcontract4" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="Collaborativediscussion1">Collaborative Discussion 1:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20discussion%201/Collaborative%20discussion%201_Page1.jpg"
+
+                    alt="CollabDiscuss1" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20discussion%201/Collaborative%20discussion%201_Page2.jpg"
+
+                    alt="CollabDiscuss2" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20discussion%201/Collaborative%20discussion%201_Page3.jpg"
+
+                    alt="CollabDiscuss3" style="border:1px solid #000000" width="70%">
+                </p>
+                <h3 id="unit5_8">Unit 5 - 8:</h3>
+                <h4 id="SecurityFrameworks">Security Frameworks:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Wiki%20-%20Security%20Frameworks/Wiki%20-%20Security%20Frameworksv2_Page1.jpg"
+
+                    alt="wikisec1" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Wiki%20-%20Security%20Frameworks/Wiki%20-%20Security%20Frameworksv2_Page2.jpg"
+
+                    alt="wikisec2" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Wiki%20-%20Security%20Frameworks/Wiki%20-%20Security%20Frameworksv2_Page3.jpg"
+
+                    alt="wikisec3" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Wiki%20-%20Security%20Frameworks/Wiki%20-%20Security%20Frameworksv2_Page4.jpg"
+
+                    alt="wikisec4" style="border:1px solid #000000" width="70%">
+                </p>
+                <h4 id="GDPRCaseStudy">GDPR Case Study:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/GDPR%20Case%20Study/GDPR%20Case%20Study_Page1.jpg"
+
+                    alt="GDPRCaseStudypg1" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/GDPR%20Case%20Study/GDPR%20Case%20Study_Page2.jpg"
+
+                    alt="GDPRCaseStudypg2" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/GDPR%20Case%20Study/GDPR%20Case%20Study_Page3.jpg"
+
+                    alt="GDPRCaseStudypg3" style="border:1px solid #000000" width="70%">
+                </p>
+                <h4 id="RiskIdentificationReport">Risk Identification Report:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page1.jpg"
+
+                    alt="finalriskidreport1" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page2.jpg"
+
+                    alt="finalriskidreport2" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page3.jpg"
+
+                    alt="finalriskidreport3" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page4.jpg"
+
+                    alt="finalriskidreport4" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page5.jpg"
+
+                    alt="finalriskidreport5" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page6.jpg"
+
+                    alt="finalriskidreport6" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page7.jpg"
+
+                    alt="finalriskidreport7" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page8.jpg"
+
+                    alt="finalriskidreport8" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page9.jpg"
+
+                    alt="finalriskidreport9" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page10.jpg"
+
+                    alt="finalriskidreport10" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page11.jpg"
+
+                    alt="finalriskidreport11" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page12.jpg"
+
+                    alt="finalriskidreport12" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page13.jpg"
+
+                    alt="finalriskidreport13" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page14.jpg"
+
+                    alt="finalriskidreport14" style="border:1px solid #000000" width="70%">
+                </p>
+                <p> <img src="artefacts/SRMModule/Final%20Risk%20Identification%20Report/Final%20Risk%20Identification%20Report_Page15.jpg"
+
+                    alt="finalriskidreport15" style="border:1px solid #000000" width="70%">
+                </p>
+                <h3 id="unit9_12">Unit 9 - 12:</h3>
+                <h4 id="CollaborativeDiscussion2">Collaborative Discussion 2:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20Discussion%202/Collaborative%20Discussion%202_Page1.jpg"
+
+                    alt="collabdiscuss2_1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20Discussion%202/Collaborative%20Discussion%202_Page2.jpg"
+
+                    alt="collabdiscuss2_2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20Discussion%202/Collaborative%20Discussion%202_Page3.jpg"
+
+                    alt="collabdiscuss2_3" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="DRsolutionReportPart1">DR solution Part 1 - Report:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page1.jpg"
+
+                    alt="drsolrep1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page2.jpg"
+
+                    alt="drsolrep2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page3.jpg"
+
+                    alt="drsolrep3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/DR_solutions/DRSolutions_Page4.jpg"
+
+                    alt="drsolrep4" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="DRSolutionPresentationPart2">DR Solution Part 2 -
+                  Presentation:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page1.jpg"
+
+                    alt="drsolppt1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page2.jpg"
+
+                    alt="drsolppt2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page3.jpg"
+
+                    alt="drsolppt3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/DR_Solutions_PPT/DR_Solutions_PPT_Page4.jpg"
+
+                    alt="drsolppt4" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="Group1ExecutiveSummary">Executive Summary:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page1.jpg"
+
+                    alt="ExecSummary1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page2.jpg"
+
+                    alt="ExecSummary2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page3.jpg"
+
+                    alt="ExecSummary3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page4.jpg"
+
+                    alt="ExecSummary4" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page5.jpg"
+
+                    alt="ExecSummary5" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page6.jpg"
+
+                    alt="ExecSummary6" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page7.jpg"
+
+                    alt="ExecSummary7" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page8.jpg"
+
+                    alt="ExecSummary8" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page9.jpg"
+
+                    alt="ExecSummary9" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page10.jpg"
+
+                    alt="ExecSummary10" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page11.jpg"
+
+                    alt="ExecSummary11" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page12.jpg"
+
+                    alt="ExecSummary12" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Executive%20Summary%20Final/Executive%20Summary%20Final_Page13.jpg"
+
+                    alt="ExecSummary13" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="FuturefSRMPowerPoint">Future of SRM Presentation Slides:</h4>
+                <p> <a href="#tocontents">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page1.jpg"
+
+                    alt="PPT1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page2.jpg"
+
+                    alt="PPT2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page3.jpg"
+
+                    alt="PPT3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page4.jpg"
+
+                    alt="PPT4" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page5.jpg"
+
+                    alt="PPT5" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page6.jpg"
+
+                    alt="PPT6" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page7.jpg"
+
+                    alt="PPT7" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page8.jpg"
+
+                    alt="PPT8" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page9.jpg"
+
+                    alt="PPT9" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page10.jpg"
+
+                    alt="PPT10" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page11.jpg"
+
+                    alt="PPT11" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page12.jpg"
+
+                    alt="PPT12" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page13.jpg"
+
+                    alt="PPT13" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Unit%2012%20Seminar%206%20Group%201/Unit%2012%20Seminar%206%20Group%201_Page14.jpg"
+
+                    alt="PPT14" style="border:1px solid #000000" width="70%"></p>
+                <h3 id="adhoc">Supporting Documents:</h3>
+                <h4 id="PeerReview">Peer Review Evaluation:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p>&lt;TODO&gt;Some description about this.</p>
+                <p> <img src="artefacts/SRMModule/A%20TEAM%20Peer%20Evaluation/A%20TEAM%20Peer%20evaluation%20template_Page1.jpg"
+
+                    alt="peerreview1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/A%20TEAM%20Peer%20Evaluation/A%20TEAM%20Peer%20evaluation%20template_Page2.jpg"
+
+                    alt="peerreview2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/A%20TEAM%20Peer%20Evaluation/A%20TEAM%20Peer%20evaluation%20template_Page3.jpg"
+
+                    alt="peerreview3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/A%20TEAM%20Peer%20Evaluation/A%20TEAM%20Peer%20evaluation%20template_Page4.jpg"
+
+                    alt="peerreview4" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="GroupNotes">Group Notes:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page1.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes1" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page2.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes2" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page3.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes3" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page4.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes4" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page5.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes5" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page6.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes6" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page7.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes7" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page8.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes8" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page9.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes9" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page10.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes10" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page11.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes11" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page12.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes12" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page13.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes13" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page14.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes14" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/SRM_G1_2022_Group_Notes/SRM_G1_2022_Group_Notes_Page15.jpg"
+
+                    alt="SRM_G1_2022_Group_Notes15" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <h4 id="MeetingMinutes">Meeting Minutes:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Meeting%20Minutes/Meeting%20Minutes.jpg"
+
+                    alt="MeetingMinutes" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="Collaborativediscussion1PeerResponses">Collaborative
+                  Discussion 1 - Peer Responses:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20Discussion%201%20Peer%20Responses/Collaborative_Discussion_1_Peer_Responses_Page_1.jpg"
+
+                    alt="CollabDiscuss1_PeerResp1" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Collaborative%20Discussion%201%20Peer%20Responses/Collaborative_Discussion_1_Peer_Responses_Page_2.jpg"
+
+                    alt="CollabDiscuss1_PeerResp2" style="border:1px solid #000000"
+
+                    width="70%"></p>
+                <h4 id="FirstDraftRiskIdentificationReport">First Draft Risk
+                  Identification Report:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/First%20Draft%20Risk%20ID%20Report/First%20Draft%20Risk%20Identification%20Report_Page1.jpg"
+
+                    alt="FirstDraftRisk1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/First%20Draft%20Risk%20ID%20Report/First%20Draft%20Risk%20Identification%20Report_Page2.jpg"
+
+                    alt="FirstDraftRisk2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/First%20Draft%20Risk%20ID%20Report/First%20Draft%20Risk%20Identification%20Report_Page3.jpg"
+
+                    alt="FirstDraftRisk3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/First%20Draft%20Risk%20ID%20Report/First%20Draft%20Risk%20Identification%20Report_Page4.jpg"
+
+                    alt="FirstDraftRisk4" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/First%20Draft%20Risk%20ID%20Report/First%20Draft%20Risk%20Identification%20Report_Page5.jpg"
+
+                    alt="FirstDraftRisk5" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/First%20Draft%20Risk%20ID%20Report/First%20Draft%20Risk%20Identification%20Report_Page6.jpg"
+
+                    alt="FirstDraftRisk6" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/First%20Draft%20Risk%20ID%20Report/First%20Draft%20Risk%20Identification%20Report_Page7.jpg"
+
+                    alt="FirstDraftRisk7" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="SecondDraftRiskIdentificationReport">Second Draft Risk
+                  Identification Report:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page1.jpg"
+
+                    alt="SecondDraftRisk1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page2.jpg"
+
+                    alt="SecondDraftRisk2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page3.jpg"
+
+                    alt="SecondDraftRisk3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page4.jpg"
+
+                    alt="SecondDraftRisk4" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page5.jpg"
+
+                    alt="SecondDraftRisk5" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page6.jpg"
+
+                    alt="SecondDraftRisk6" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page7.jpg"
+
+                    alt="SecondDraftRisk7" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page8.jpg"
+
+                    alt="SecondDraftRisk8" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page9.jpg"
+
+                    alt="SecondDraftRisk9" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page10.jpg"
+
+                    alt="SecondDraftRisk10" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page11.jpg"
+
+                    alt="SecondDraftRisk11" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page12.jpg"
+
+                    alt="SecondDraftRisk12" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page13.jpg"
+
+                    alt="SecondDraftRisk13" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Second%20Draft%20Risk%20ID%20Report/Second%20Draft%20Risk%20Identification%20Report_Page14.jpg"
+
+                    alt="SecondDraftRisk14" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="RiskstotheQualityofProducts">Risks to the Quality of
+                  Products:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Risks%20to%20the%20Quality%20of%20Products/Risks%20to%20the%20Quality%20of%20Products_Page1.jpg"
+
+                    alt="risksquality1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Risks%20to%20the%20Quality%20of%20Products/Risks%20to%20the%20Quality%20of%20Products_Page2.jpg"
+
+                    alt="risksquality2" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="DraftExecutiveSummary">Draft Executive Summary:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page1.jpg"
+
+                    alt="DraftExecSummary1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page2.jpg"
+
+                    alt="DraftExecSummary2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page3.jpg"
+
+                    alt="DraftExecSummary3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page4.jpg"
+
+                    alt="DraftExecSummary4" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page5.jpg"
+
+                    alt="DraftExecSummary5" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page6.jpg"
+
+                    alt="DraftExecSummary6" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page7.jpg"
+
+                    alt="DraftExecSummary7" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page8.jpg"
+
+                    alt="DraftExecSummary8" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page9.jpg"
+
+                    alt="DraftExecSummary9" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page10.jpg"
+
+                    alt="DraftExecSummary10" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page11.jpg"
+
+                    alt="DraftExecSummary11" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page12.jpg"
+
+                    alt="DraftExecSummary12" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page13.jpg"
+
+                    alt="DraftExecSummary13" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page14.jpg"
+
+                    alt="DraftExecSummary14" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page15.jpg"
+
+                    alt="DraftExecSummary15" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page16.jpg"
+
+                    alt="DraftExecSummary16" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page17.jpg"
+
+                    alt="DraftExecSummary17" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page18.jpg"
+
+                    alt="DraftExecSummary18" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page19.jpg"
+
+                    alt="DraftExecSummary19" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Draft%20Executive%20Summary/Draft%20Executive%20Summary_Page20.jpg"
+
+                    alt="DraftExecSummary20" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="ApplicationofVikorandCopras">Application of VIKOR and
+                  COPRAS for Cyber Threat Ranking Report:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202_Page1.jpg"
+
+                    alt="vikcop1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202_Page2.jpg"
+
+                    alt="vikcop2" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202_Page3.jpg"
+
+                    alt="vikcop3" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202_Page4.jpg"
+
+                    alt="vikcop4" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202/Report%20on%20VIKOR,%20COPRA%20and%20Shannon%20Entropy%202_Page5.jpg"
+
+                    alt="vikcop5" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="ComputationofShannonEntropyWeightEstimation">Computation
+                  of Shannon Entropy Weight Estimation:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/shannon1.jpg"
+
+                    alt="shannon1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/shannon2.jpg"
+
+                    alt="shannon2" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="ComputationofVikorAnalysis">Computation of VIKOR
+                  Analysis:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/vikor1.jpg"
+
+                    alt="vikor1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/vikor2.jpg"
+
+                    alt="vikor2" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="ComputationofCoprasAnalysis">Computation of COPRAS
+                  Analysis:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/copras1.jpg"
+
+                    alt="copras1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Supply%20Chain%20XLS/copras2.jpg"
+
+                    alt="copras2" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="DescriptionMonteCarloSimulation">Description of Markov
+                  Chain Monte Carlo (MCMC) Simulation of Risk of Cyber Threats:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/MCMC%20Analysis%20on%20Cyber-threat%20risk%20report/MCMC%20Analysis%20on%20Cyber-threat%20risk%20report_Page1.jpg"
+
+                    alt="mcmcreport1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/MCMC%20Analysis%20on%20Cyber-threat%20risk%20report/MCMC%20Analysis%20on%20Cyber-threat%20risk%20report_Page2.jpg"
+
+                    alt="mcmcreport2" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="MonteCarloSimulationProbs">Computation of Probabilities
+                  of Attack Likelihood, Typical Severity and Skills Required for
+                  MCMC Simulation:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/MCMC%20XLS/MCMCprobabilities1.jpg"
+
+                    alt="mcmcprobs1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/MCMC%20XLS/MCMCprobabilities2.jpg"
+
+                    alt="mcmcprobs2" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="MonteCarloSimulationResults">Results of MCMC Simulation
+                  of Cyber Threats Using Computed Probabilities:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/MCMC%20XLS/MCMCcyberthreatsimulation.jpg"
+
+                    alt="mcmcsim" style="border:1px solid #000000" width="70%"></p>
+                <h4 id="FuturefSRMTranscript">Future of SRM Presentation
+                  Transcript:</h4>
+                <p> <a href="#tocontentssupport">Back to Table of Contents</a></p>
+                <p> <img src="artefacts/SRMModule/Some%20AI%20generated%20text%20for%20PowerPoint/Some%20AI%20generated%20text%20for%20PowerPoint_Page1.jpg"
+
+                    alt="PPTtransc1" style="border:1px solid #000000" width="70%"></p>
+                <p> <img src="artefacts/SRMModule/Some%20AI%20generated%20text%20for%20PowerPoint/Some%20AI%20generated%20text%20for%20PowerPoint_Page2.jpg"
+
+                    alt="PPTtransc1" style="border:1px solid #000000" width="70%"></p>
+              </ol>
+            </article>
+            <a href="#learnoutcomes"> </a></div>
+          <a href="#learnoutcomes"> </a></div>
+        <a href="#learnoutcomes"> </a></div>
+      <a href="#learnoutcomes">
+        <!-- Footer --> </a>
+      <div id="footer-wrapper"><a href="#learnoutcomes"> </a>
+        <footer id="footer" class="container"><a href="#learnoutcomes"> </a>
+          <div class="row"><a href="#learnoutcomes"> </a>
+            <div class="col-12 col-6-medium col-12-small"><a href="#learnoutcomes">
+                <!-- Contact --> </a>
+              <section class="widget contact last"><a href="#learnoutcomes">
+                  <h3>Contact Us</h3>
+                </a>
+                <p><a href="#learnoutcomes"> </a><a href="#tocontents">Back to
+                    Table of Contents</a></p>
+                <ul>
+                  <a href="#learnoutcomes"> </a>
+                  <li><a href="#learnoutcomes"></a><a href="https://www.facebook.com/mbali.majola.5680"
+
+                      class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                </ul>
+                <p>Cape Town<br>
+                  South Africa<br>
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div id="copyright">
+                <ul class="menu">
+                  <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script> alt="riskstoquality1"&gt;
+  </body>
+</html>
